@@ -1,0 +1,736 @@
+html, body, div, section, header, footer, ul,  health mattersli, h1, h2, p {
+    margin: 0; /* Resetting margin */
+    padding: 0; /* Resetting padding */
+    border: 0; /* Resetting border */
+}
+
+:root{
+    --themeGreen: #98CE00;
+    --emeraldGreen: #17433c;
+    --purple: #89A6FA;
+    --dirtyBrown: #98838F;
+    --gray: #DCDCDC;
+}
+html {
+    scroll-behavior: smooth;
+}
+button,
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.fullContainer img{
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: -30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+.fullContainer{
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    height: 100px;
+    margin: auto;
+}
+
+/* Common style end */
+/* Home style start */
+.sectionTitle{
+    width:  300px;
+    border-bottom: 3px solid var(--dirtyBrown);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 15px;
+    position: relative;
+    padding: 10px 0 ;
+    text-transform: uppercase;
+}
+.sectionTitle::after {
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeGreen);
+    position: absolute;
+    Left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #98CE00;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+/* Common style end*/
+ 
+/* Home style start here */
+header {
+    width: 100%;
+    background-color: rgb(189, 187, 147);
+    position: fixed;
+    z-index: 2;
+    background-image: url('carelogo1.png'); /* Replace 'your-image.jpg' with the URL of your image____NEED TO IMPOROVE */ 
+    background-size: cover;
+    background-blend-mode: multiply; /* Blending mode_Not really working since the img is gradation style */
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+}
+
+header .container .img {
+    padding: 15px 0;
+    height: 75px;
+}
+header .container .logo img{
+    height:400%;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display:inline-block;
+    
+}
+
+header nav ul li a {
+    display:inline-block;
+    height: 100px;
+    line-height: 95px;
+    padding: 0 15px;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-size: 16px;
+    color: #1b251e;
+    font-style: bold;
+}
+
+header nav ul a:hover{
+    background-color: rgb(210, 210, 170);
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/love.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.banner h1{
+    margin-top: 230px;
+    display:inline-block;
+    font-family: 'Segoe UI';
+    font-size: 5,5;
+    color: #000;
+    text-shadow:  0 0 2px #000;
+    width: 80%;
+    line-height: 90rem;
+    font-weight: 100;
+}
+
+/*---Mental Health Matters page starts here*/
+.join {
+    background-color: #DDE8B9;
+    margin: auto;
+    height: 500px; /* background size */
+    color: #000;
+    padding: 20px;   
+   
+}
+
+.join .learnMentalHealth {
+    font-size: 40px;
+    
+}
+.join .learnMentalHealth span {
+    font-weight: 900;
+    padding: 5px;
+    color: #eb3c70;
+    text-transform: uppercase;
+}
+
+.join h2 {
+    font-weight: 400;
+}
+.join h3{
+    margin-top: 8px;
+}
+.join p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* Add space between buttons */
+    gap: -100px;
+    position: relative;
+
+}
+
+.join button {
+    padding: 10px 20px;
+    border: 2px solid #89A6FA;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*---Mental Health Matters page ends here*/
+
+
+/*  crisisSection(Crisis_Assistance) Starts */
+#crisisSection .cards{
+    display: flex;     
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+
+/* #crisisSection {
+    background-color: #b2bda3; 
+ } */
+
+#crisisSection .cards > div {
+    width: 350px;  /*card box size*/
+    height: 190px;   /*card box size*/
+    background-color: #C8DDF3;
+    padding: 35px;
+    color: #98838F;
+    text-align: center;
+    border-radius: 15px;
+    height: 215px;
+    border: 1px solid #ccc;
+    transition: 0.4s; /*when you point the box, the box will get slowly get bigger for 0.4secs*/
+}
+#crisisSection .cards > div:hover{ /*the box will be big(another hover effect)*/
+    width: 400px;
+    margin: -20px;
+    border-color: var(--themeGreen);
+    padding: 55px;
+    height: auto;
+}
+
+#crisisSection .cards > div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#crisisSection .cards > div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+#crisisSection .cards > div button {
+    border: 1px solid var(--themeGreen);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s; /*hover fadding effect for the botton*/
+}
+#crisisSection .cards > div:hover button {
+    background-color: var(--themeGreen);
+    color:#000;
+}
+/* crisisSection (Crisis_Assistance)Ends  */
+
+/* community support section starts here*/
+
+#communitySection {
+    margin-top: 250px; /* Increase the top margin to create space */
+}
+.sectionT{
+    width:  500px;
+    border-bottom: 3px solid var(--dirtyBrown);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 15px;
+    position: relative;
+    padding: -10 px 0 ;
+    text-transform: uppercase;
+    
+}
+.sectionT::after {
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeGreen);
+    position: absolute;
+    Left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #98CE00;
+}
+.programs {
+   
+    margin: auto;
+    height: 800px;
+    background-color:#b2bda3;
+    margin-top: 5px;
+  
+}
+
+.programs .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    /* margin-left: 3%;  */
+    grid-gap: 60px;
+    margin-top: 30px; 
+}
+.programs .boxContainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position:auto;
+    margin-bottom: 15px;
+}
+.programs .boxContainer .box .cardImage {
+    width: 100%;
+    height: 360px;
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.programs .boxContainer .box .cardImage:after {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after {
+    background-image: url(images/group_hand.jpg);
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after {
+    background-image: url(images/volunteer.jpg);
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after {
+    background-image: url(images/donate.jpg);
+    
+}
+.programs .boxContainer .box:hover .cardImage:after{
+    top: 100%;
+    transition: 0.4s;
+}
+.programs .boxContainer .box .programTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+.programs .boxContainer .box .donationCount span {
+    color: var(--dirtyBrown);
+
+}
+
+
+.programs .boxContainer .box button {
+    position: relative;
+    left: 15%; /* Adjust the left position */
+    transform: translateX(-50%); /* Center the button horizontally */
+    bottom: -35px;
+    background-color: var(--emeraldGreen);
+    color: #fff;
+    border: none; /* Remove border */
+    border-radius: 60px;
+    padding: 9px 15px;
+    outline: none;
+    cursor: pointer; /* Add cursor pointer */
+}
+
+/* community support section ends here */
+
+
+
+/* Self-Empowering Tool design starts here */
+.selfTool {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.selfTool .videoPlayer {
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    width: 100%;
+    margin-bottom: -10px;
+    transform: translate(-50%, -50%);
+}
+.selfTool {
+    background-color:rgb(72, 77, 75);
+    background-size: cover;
+    background-position: center;
+    margin: 0; /* Remove margin to move text to beginning of the page */
+    padding: 20px;  /*Add padding to text*/
+    height: 800px;
+    color: #e3e2e2;
+}
+
+.selfTool .selfETool {
+    position: absolute;
+    top: 0.5vh;
+    right:11px;
+    background-color: #272627;
+    border-radius: 30px;
+    width: 600px;
+    height: -80px;
+    /*top: 35vh;*/
+    color: #e5f0ec;
+
+}
+
+.selfTool p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400; /* Increase the font weight for a thicker appearance */
+    font-style: oblique;
+    font-size: 30px;
+    padding: 10px; /* Add padding to text */
+}
+
+.selfTool .selfETool {
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.selfTool .selfETool span {
+    font-weight: 800;
+    color: #16E0BD;
+    position:relative;
+   right: -100px;
+    top: -5px;
+   
+}
+
+.selfTool button {
+    padding: 18px 40px;
+    position: relative;
+    top: -20px;
+    right: -200px;
+    border: 2px solid #89A6FA;
+    outline: none;
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer; /* Add cursor property */
+    border-radius: 50px; /* Make the button round */
+    background-color: #3498db; /* Set background color */
+    color: white; /* Set text color */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.selfTool button:hover {
+    background-color: #2980b9; /* Change background color on hover */
+    color: #f0f0f0; /* Change text color on hover */
+}
+
+/* Self-Empowering Tool page ends here */
+
+
+.overflow {
+    overflow: auto; /* Setting overflow to auto */
+}
+
+/*gallery(about Us) page starts here*/
+
+.gallery .galleryContainer {
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.gallery .galleryContainer .item {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .galleryContainer img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+}
+.gallery{
+    background-image: url(images/gray.jpg);
+    margin: auto;
+    height: 900px;
+    
+}
+/*gallery(about) page ends here*/
+
+/*------Footer(Akemi) Style Starerts Here-----*/
+footer {
+    
+    padding: 50px 0;
+    font-size: 14px;
+
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#blink-text #blinking-text {
+    animation: blink 4s linear infinite;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: bold;
+    color: rgb(243, 130, 149);
+}
+footer .container img { /*the logo on the left bottom*/
+    max-width: 200px;
+    height: auto;
+}
+footer .container {/*the layout of 3containers on the bottom at the footer section*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;/*explains the layout style between the paragraphnwoth email drop box,Useful tool, and contact Us section*/
+    grid-gap: 100px;/*adding gap on the layout"grid-template-colums"*/
+}
+footer .title {/*The modification of the Titles in the footer, such as "Usuful Tool & Contact Us"*/
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase;
+border-bottom: 2px solid;
+margin-bottom: 30px;
+padding: 0 0 5px 0;
+}
+footer p{ /*Modification of the paragraph in the footer(size,padding,)*/
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: -20px;
+}
+/* this part was added because the icon(image) size is too big that pushes the container of Usuful Tool and Contact Us that makes the layout weired*/
+footer .linkContainer,
+footer .contactUsContainer {
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+    margin-bottom: 40px;
+}
+footer.linkContainer ul{/**/
+    list-style-type: none;
+}
+footer.linkContainer ul li a { /*NEED FIX add space between links*/
+    text-decoration: none;
+    color:#7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+    
+}
+
+footer .newsLetterContainer img{/*Modifying the image(icon)on the bottom*/
+    height: 110px;
+    width: 130px;
+    margin-bottom: 11px;
+}
+
+footer .newsLetterContainer input { /*This is the little drop container where you can put the email(footer section)*/
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    margin-left: -25px;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 50px;
+    /*padding: -10px 15px;*/
+    width: 100%;
+}
+
+/*Responsive Website Code Starts here*/
+@media screen and (max-width: 1140px){
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }   
+
+}
+@media screen and (max-width: 1024px) {
+    .banner h1 {
+        margin-top: 200px;
+    }
+    .education .videoPlayer{
+        width: 1280px;
+    }
+    #learnMental .buttons-container{
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    #communitySection .cards{
+        justify-content: space-around;
+        height: auto;
+        padding-top: 10vh;
+    }
+    #communitySection .cards > div {
+        margin-top: -50px;
+        margin: 10px 0;
+    }
+    #crisisSection .cards{
+        justify-content: space-around;
+        height: auto;
+    }
+    #crisisSection .cards > div {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .banner {
+        background-position-x: 45%;
+    }
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+    .programs .boxContainer{
+        grid-template-columns: repeat(2, 1ft);
+    }
+}
+@media screen and (max-width: 768px){
+    header nav {
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    header nav:after{
+        top: 17px;
+
+    }
+    header nav:before{
+        top: 7px;
+
+    }
+    header nav:after,
+    header nav:before{
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 5px;
+        background-color: #16E0BD;
+
+    }
+    header nav ul{
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+    header nav:hover ul {
+        right: 0;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a {
+        width: 300px;
+        background-color: rgba(197, 171, 171, 0.6);
+    }
+    .banner {
+        background-position-x: 65%;
+    }
+    .banner p {
+        font-size: 14px;
+    }
+    .banner p,
+    .banner h1 {
+        width: 50%;
+    }
+    #communitySection .programs {
+        width: 100px;
+        margin-top: 10px;
+        padding: 30px;
+
+    }
+    @media screen and  (max-width: 425px){
+        .banner h1{
+            margin-top: 150px;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+    }
+    @media screen and (max-width: 425px){
+        #learnMental .join{
+            text-align: justify;
+            margin-top: 10px;
+            font-size: 2rem;
+        }
+
+    }
+    #communitySection .cards > div:hover {
+        width: 100px;
+        margin-top: 10px;
+        padding: 10px
+    }
+    .programs .boxContainer{
+        grid-template-columns: 1fr;
+    }
+    .selfTool .videoPlayer {
+        width: 1400px;
+    }
+
+}
